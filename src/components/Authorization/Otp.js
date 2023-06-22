@@ -112,7 +112,7 @@ export default function Otp() {
             .then(response => {
                 console.log('Response is:', response.data);
                 alert('Password Successfully Changed');
-                window.location.href='/login'
+                window.location.href='/'
                 // setValidPass(true);
             })
             .catch(error => {
