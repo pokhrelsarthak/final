@@ -92,6 +92,33 @@ function App() {
                 <Route path="/">
                   <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
                 </Route>
+                <Route path="/home">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/charts">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/reports">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/cabi">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />  
+                </Route>
+                <Route path="/table1">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/table2">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/table3">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/table4">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
+                <Route path="/table5">
+                  <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
+                </Route>
               </Switch>
              </div>
           )}
