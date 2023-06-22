@@ -22,7 +22,7 @@ export default function Otp() {
             return;
         }
         
-        axios.get(`http://localhost:8080/signup/all`).then((respo) => {
+        axios.get(`http://18.119.86.132:8080/electionfinal/signup/all`).then((respo) => {
           const responseData = respo.data;
           const enteredvalue = valuee;
           console.log(enteredvalue);
@@ -42,7 +42,7 @@ export default function Otp() {
             setShowOtp(true);
             setIsEmail(true);
             setIsNumber(false);
-            axios.put('http://localhost:8080/signup/otp', onlyEmail)
+            axios.put('http://18.119.86.132:8080/electionfinal/signup/otp', onlyEmail)
               .then(response => {
                   console.log('Response:', response.data);
               })
@@ -57,7 +57,7 @@ export default function Otp() {
               setShowOtp(true);
               setIsEmail(false);
               setIsNumber(true);
-              axios.put('http://localhost:8080/signup/otpsms', onlyNumber)
+              axios.put('http://18.119.86.132:8080/electionfinal/signup/otpsms', onlyNumber)
                 .then(response => {
                     console.log('Response:', response.data);
                 })
@@ -108,7 +108,7 @@ export default function Otp() {
             password: password,
             };
         
-            axios.post('http://localhost:8080/signup/changepassword', passCredentials)
+            axios.post('http://18.119.86.132:8080/electionfinal/signup/changepassword', passCredentials)
             .then(response => {
                 console.log('Response is:', response.data);
                 alert('Password Successfully Changed');
@@ -128,7 +128,7 @@ export default function Otp() {
             password: password,
             };
         
-            axios.post('http://localhost:8080/signup/changepassword2', passCredentials2)
+            axios.post('http://18.119.86.132:8080/electionfinal/signup/changepassword2', passCredentials2)
             .then(response => {
                 console.log('Response is:', response.data);
                 alert('Password Successfully Changed');
@@ -156,7 +156,7 @@ export default function Otp() {
           };
           console.log(emailRequest);
           axios
-          .post('http://localhost:8080/signup/verify', emailRequest)
+          .post('http://18.119.86.132:8080/electionfinal/signup/verify', emailRequest)
           .then(response => {
               console.log('Response is:', response.data);
               if (response.data === 'Successfully verified'){
@@ -180,7 +180,7 @@ export default function Otp() {
           };
           console.log(numberRequest);
           axios
-          .post('http://localhost:8080/signup/verify2', numberRequest)
+          .post('http://18.119.86.132:8080/electionfinal/signup/verify2', numberRequest)
           .then(response => {
               console.log('Response is:', response.data);
               if (response.data === 'Successfully verified'){
@@ -205,7 +205,7 @@ export default function Otp() {
         // };
     
         // axios
-        // .post('http://localhost:8080/signup/save', signupData)
+        // .post('http://18.221.244.233:8080/electionfinal/signup/save', signupData)
         // .then(response => {
         //     console.log('Response:', response.data);
         //     alert('User Added');
