@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route,useHistory } from "react-router-
 import Login from "./components/Authorization/Login";
 import Signup from "./components/Authorization/Signup";
 import Otp from "./components/Authorization/Otp";
-import Otp2 from "./components/Authorization/Otp2";
+
 import Header from "./components/Home&Header/Header";
 import Home from "./components/Home&Header/home";
 import Charts from "./components/Charts/Charts";
@@ -88,9 +88,6 @@ function App() {
                 </Route>
                 <Route path="/emailotp">
                   <Otp/>
-                </Route>
-                <Route path="/numberotp">
-                  <Otp2/>
                 </Route>
                 <Route path="/">
                   <Login auth={isAuthenticated} setIsAuthenticated={setIsAuthenticated} setRender={setRender} />
